@@ -21,16 +21,18 @@ var images = [
     "./img/ruwan2.jpg"
 ]
 
+
 // variables
 var num = 0;
 
 var previous = document.getElementById('previous');
 var next = document.getElementById('next');
 var btns = document.getElementsByClassName('animation');
+var image = document.getElementById('about-img');
 
 // events
-next.addEventListener('click', nex)
-previous.addEventListener('click', prev)
+var event1 = next.addEventListener('click', nex);
+var event2 = previous.addEventListener('click', prev);
 
 
 // function

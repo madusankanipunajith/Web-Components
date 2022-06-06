@@ -194,6 +194,17 @@ body::-webkit-scrollbar {
     width: 400px;
     height: 400px;
     border: 2px solid #fff;
+    position: relative;
+    overflow: hidden;
+}
+.banner-2 .section-2 img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.banner-2 .section-2 #about-img{
+    transition: 1s all ease-in-out;
 }
 
 /* Bio */
@@ -233,7 +244,7 @@ body::-webkit-scrollbar {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 50%;
+    left: 40%;
     transform: translateX(-50%);
     animation: spin 2s linear infinite;
 }
@@ -398,6 +409,38 @@ body::-webkit-scrollbar {
     margin-top: 10px;
 }
 
+/* Footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background: #000;
+}
+
+footer .about-info {
+    width: 300px;
+    border: 1px solid #fff;
+    height: 80px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+footer .about-info > p{
+    display: block;
+    color: #fff;
+}
+footer .copyright{
+    color: #fff;
+}
+footer .social{
+    display: flex;
+}
+footer .social a > i {
+    color: #fff;
+    padding: 0 10px;
+}
 
 /*Responsive*/
 @media(max-width: 750px){
@@ -545,6 +588,22 @@ body::-webkit-scrollbar {
     {
         width: 100%;
         height: auto;
+    }
+
+    /* Footer */
+    /* Footer */
+    footer {
+        height: auto;
+        flex-direction: column;
+    }
+    footer .about-info, footer .copyright{
+        margin-top: 10px;
+    }
+    footer .social{
+        margin-top: 15px;
+    }
+    footer .social a > i{
+        padding: 0 15px;
     }
 }
 
