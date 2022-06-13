@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #000;
+    color: #fff;
+}
+
+.container{
+    margin: 100px auto;
+    margin-top: 330px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.pogress{
+    border-radius: 30px;
+    background: #fff;
+}
+
+.progress-moved .progress-bar{
+    height: 18px;
+    border-radius: 30px;
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+    background: #cf4707;
+    animation: progress 5s infinite;
+}
+
+/* Icon */
+.icon{
+    color: #cf4707;
+    padding-right: 400px;
+    padding-bottom: 20px;
+    animation: icon 5s infinite;
+}
+
+/* Animation */
+@keyframes progress {
+    0%{
+        width: 0%;
+        background: #faa780;
+        box-shadow: 0 0 8px #cf4707;
+    }
+
+    100%{
+        width: 100%;
+        background: #cf4707;
+        box-shadow: 0 0 20px #cf4707;
+    }
+}
+
+@keyframes icon {
+    0%{
+        color: #faa780;
+        text-shadow: 0 0 8px #cf4707;
+    }
+
+    100%{
+        color: #cf4707;
+        text-shadow: 0 0 10px #cf4707;
+    }
+}
